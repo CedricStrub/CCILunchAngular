@@ -1,0 +1,149 @@
+
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@use '@angular/material' as mat;
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat.core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$CCILunchAngular-primary: mat.define-palette(mat.$indigo-palette);
+$CCILunchAngular-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$CCILunchAngular-warn: mat.define-palette(mat.$red-palette);
+
+// Create the theme object. A theme consists of configurations for individual
+// theming systems such as "color" or "typography".
+$CCILunchAngular-theme: mat.define-light-theme((
+  color: (
+    primary: $CCILunchAngular-primary,
+    accent: $CCILunchAngular-accent,
+    warn: $CCILunchAngular-warn,
+  )
+));
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include mat.all-component-themes($CCILunchAngular-theme);
+
+/* You can add global styles to this file, and also import other style files */
+
+$background: #000000;
+$title: #FFDAC5;
+$txt: #FFF;
+
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./assets/font/JetBrains_Mono/static/JetBrainsMono-Regular.ttf') format('truetype'),
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal ;
+  font-weight: 700;
+  src: url('./assets/font/JetBrains_Mono/static/JetBrainsMono-Bold.ttf') format('truetype'),
+}
+
+html, body { height: 100%; }
+body { 
+  margin: 0; 
+  font-family: "JetBrains Mono", sans-serif;
+  background-color: $background;
+}
+
+.main{
+  position: relative;
+  z-index: -5;
+  width: 100vw;
+  height: 471px;
+  background-image: linear-gradient(to bottom,rgba(255,255,255,0)0%, rgba(255,255,255,0) 90%, rgba(0,0,0,1) 100%), url('/assets/images/background.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.main-bg{
+  position: relative;
+  z-index: -4;
+  width: 100vw;
+  height: 600px;
+  background-color: black;
+  box-shadow: 0px 0px 50px 50px #000; 
+}
+
+.txt-buttom-w{
+  color: $txt;
+  text-align: center;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.txt-buttom-b{
+  color: $title;
+  text-align: center;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.s-title-b{
+  color: $title;
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.m-title-b{
+  color: $title;
+  text-align: center;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.s-txt-w{
+  color: $txt;
+  text-align: center;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal; 
+}
+
+.b-price{
+  color: $title;
+  text-align: center;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.pointer{
+  cursor: pointer;
+}
+
+.button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  border: 2px solid #9D9D9D;
+  background: #000;
+}

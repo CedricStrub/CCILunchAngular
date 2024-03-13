@@ -1,0 +1,11 @@
+@import '../../../../styles.scss';
+
+.reservation{
+    margin-top: 80px;
+    height: 75vh;
+    width: 25vw;
+    border-radius: 30px;
+    border: 2px solid #9D9D9D;
+    background: rgba(0, 0, 0, 0.80);
+    backdrop-filter: blur(25px); 
+}

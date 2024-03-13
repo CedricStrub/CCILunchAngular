@@ -1,0 +1,156 @@
+@import '../../../../styles.scss';
+
+.ctn{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    top: 80px;
+    height: 500px;
+}
+
+.main-bg{
+    height: 550px;
+}
+
+.title{
+    width: calc(28% - 25px);
+    height: 80px; 
+    border-radius: 20px;
+    border: 2px solid #9D9D9D;
+    background: rgba(0, 0, 0, 0.80);
+    backdrop-filter: blur(25px);
+    color: #FFF;
+    text-align: center;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 80px;
+}
+
+.card-ctn{
+    z-index: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: calc(100% - 100px);
+    padding: 50px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 22%;
+    height: 550px;
+    border-radius: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border: 2px solid #9D9D9D;
+    background: rgba(0, 0, 0, 0.80);
+    backdrop-filter: blur(25px);
+}
+
+.c-title{
+    padding: 20px;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    width: 100%;
+    color: #FFF;
+    text-align: center;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.c-label{
+    margin-top: 5px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start; 
+    color: #FFF;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+}
+
+.c-text{
+    text-align: center;
+    color: #FFF;
+    font-size: 16px;
+}
+
+.c-input{
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+    color: #FFF;
+    font-size: 16px;
+    background-color: #000;
+    border: 2px solid #9D9D9D;
+}
+
+.c-input-area{
+    width: 100%;
+    height: 130px;
+    border-radius: 10px;
+    color: #FFF;
+    font-size: 16px;
+    background-color: #000;
+    border: 2px solid #9D9D9D;
+    resize: none;
+}
+
+.c-btn{
+    cursor: pointer;
+    margin-top: 25px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    border-radius: 10px;
+    background-color: #000;
+    border: 2px solid #9D9D9D;
+    color: #FFF;
+    text-align: center;
+    font-family: "JetBrains Mono";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.c-btn:hover{
+    box-shadow: inset 0 0 2px 2px rgba(255, 255, 255, 0.6);
+}
+
+.c-spacer{
+    width: 100%;
+    height: 20px;
+}
+
+.c-frame{
+    border-radius: 10px;
+    border: 2px solid #9D9D9D;
+    overflow: hidden;
+    height: 350px;
+}
+
+.c-reseaux{
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    margin-top: 35px;
+}
+
+.fb, .x, .insta{
+    display: flex;
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}

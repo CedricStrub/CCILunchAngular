@@ -1,0 +1,62 @@
+<div class="header-ctn">
+    <div class="left">
+        <img class="logo space-btw" src="assets/images/LogoTransparent.png" alt="logo">
+        <div class="accueil txt-h pointer space-btw">
+            <a routerLink="accueil">
+                Accueil
+            </a>
+        </div>
+    </div>
+
+    <div class="center">
+        <div class="mdj txt-h pointer space-btw">
+            <a routerLink="menujour">
+                Menu du jour
+            </a>
+        </div>
+
+        <div class="mdls txt-h pointer space-btw">
+            <a routerLink="menusemaine">
+                Menu de la semaine
+            </a>
+        </div>
+        <div *ngIf="authService.hasPermission('Worker')">
+            <div class="res txt-h pointer space-btw">
+                <a routerLink="worker/reservation">
+                    Reservation
+                </a>
+            </div>
+        </div>
+        <div *ngIf="authService.hasPermission('Manager')">
+            <div class="stock txt-h pointer space-btw">
+                <a routerLink="worker/stock">
+                    Stock
+                </a>
+            </div>
+        </div>
+        <div *ngIf="authService.hasPermission('Admin')">
+            <div class="admin txt-h pointer space-btw">
+                <a routerLink="admin">
+                    Administration
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="right">
+        <div *ngIf="!authService.isConnected(); else accountSection" class="compte txt-h pointer">
+            <a routerLink="auth/login">
+                Connexion
+            </a>
+        </div>
+        
+        <ng-template #accountSection>
+            <div class="compte txt-h pointer space-btw">
+                <a routerLink="auth/compte">
+                    Mon compte
+                </a>
+            </div>
+        </ng-template>
+    </div>
+    
+</div>

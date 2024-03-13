@@ -1,0 +1,74 @@
+<div class="main"></div>
+
+<div class="card-ctn">
+    <div *ngFor="let item of acceuilData" class="card">
+        <div class="card-header cart-typo">{{ item.nom }}</div>
+        <div class="card-desc cart-typo">{{ item.description }}</div>
+        <img class="card-img" [src]="item.miniature" alt="Card image">
+        <div class="card-footer cart-typo">{{ item.jour }}</div>
+      </div>      
+</div>
+
+<div class="main-bg">
+    <div class="title1">Des ingredients frais et de qualité !</div>
+    <p class="para1">
+        Chez nous, chaque repas est une célébration de la qualité et de la variété. Nous sélectionnons avec soin nos ingrédients, privilégiant toujours la fraîcheur et la provenance locale. Notre engagement pour une alimentation saine se reflète dans notre utilisation de produits biologiques, garantissant des repas non seulement délicieux, mais également nutritifs.
+    </p>
+    <div class="round-img">
+        <div class="round-mask"></div>
+    </div>
+</div>
+
+<div class="ctn">
+    <div class="right">
+        <img class="img-carre" src="assets/images/accueil/cantine.jpg" alt="image des lieux">
+        <div class="spacer"></div>
+        <div class="title">Des menus variées et équilibré pour tous les budget</div>
+        <p class="para">Notre menu, en constante évolution, est conçu pour satisfaire tous les goûts et besoins alimentaires. Qu'il s'agisse d'options végétariennes, sans gluten ou de plats traditionnels revisités, notre gamme variée assure une expérience gastronomique unique à chaque visite. Les chefs talentueux de notre cantine sont des artisans de la saveur, mélangeant habilement tradition et innovation pour créer des plats qui ravissent les papilles.</p>
+        <div class="spacer"></div>
+        <div class="item">
+            <div class="left-i">
+                <div class="img-container">
+                    <img src="assets/images/accueil/vegetarien.jpg" alt="image d'un plat vegetarien">
+                </div>                
+            </div>
+            <div class="right-i">
+                <div class="title">Végétarien</div>
+                <p class="para">Le menu végétarien est une exploration vibrante des possibilités qu'offre la cuisine sans viande. Pensé pour les amateurs de plats végétaux, il propose une variété de créations originales et nutritives. </p>
+            </div>
+        </div>
+    </div>
+    <div class="left">
+        <div class="pres">
+            <div class="title">Un éspace convivial et confortable</div>
+            <p class="para">un véritable havre de paix et de convivialité au coeur de votre journée de travail. Dès l'entrée, vous serez accueilli dans un cadre chaleureux et lumineux, conçu pour offrir à la fois détente et dynamisme. Notre cantine est bien plus qu'un simple lieu de restauration : c'est un espace de vie, pensé pour le bien-être et l'interaction.</p>
+        </div>
+        <div class="spacer"></div>
+        <div class="item">
+            <div class="left-i">
+                <div class="img-container">
+                    <img src="assets/images/accueil/traditionnel.jpg" alt="image d'un plat vegetarien">
+                </div>                
+            </div>
+            <div class="right-i">
+                <div class="title">Traditionnel</div>
+                <p class="para">Notre menu traditionnel est une célébration des saveurs classiques et intemporelles. Ici, nous revisitons les plats qui ont marqué les cultures culinaires du monde avec une touche de modernité et d'excellence.  </p>
+            </div>
+        </div>
+        <div class="spacer"></div>
+        <div class="item">
+            <div class="left-i">
+                <div class="img-container">
+                    <img src="assets/images/accueil/sansgluten.jpg" alt="image d'un plat vegetarien">
+                </div>                
+            </div>
+            <div class="right-i">
+                <div class="title">Sans Gluten</div>
+                <p class="para">Notre menu sans gluten est conçu pour offrir une expérience culinaire complète sans compromis sur le goût ou la qualité. Idéal pour ceux qui suivent un régime sans gluten, chaque plat est soigneusement préparé pour éviter toute contamination croisée.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="btn-ctn">
+    <a class="btn" routerLink="/menujour"><div class="btn-txt">Reservez votre repas dès maintenant</div></a>
+</div>

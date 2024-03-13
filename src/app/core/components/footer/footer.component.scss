@@ -1,0 +1,77 @@
+.footer-ctn{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 250px;
+    border-bottom: 2px solid #FFF; background: #595959; 
+    backdrop-filter: blur(25px);
+}
+
+.ph{
+    width: 100%;
+    height: 120px;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg,rgba(255,255,255,0)0%, rgba(255,255,255,0) 10%, rgba(0,0,0,1) 100%);
+}
+
+.left{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 70%;
+}
+
+.right{
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+}
+
+.item{
+    display: flex;
+    flex-direction: row;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+.contact, .cdv, .cdu{
+    display: flex;
+    height: 50px;
+    margin-top: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+.fb, .x, .insta{
+    display: flex;
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.txt-h{
+    color: #FFF;
+    text-align: center;
+    font-family: "JetBrains Mono";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.contact:hover, .cdv:hover, .cdu:hover{
+    border-bottom: solid #FFF 2px;
+}
+
+.space-btw{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+a{
+    text-decoration: none;
+    color: #FFF;
+}

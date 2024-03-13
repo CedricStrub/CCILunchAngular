@@ -1,0 +1,67 @@
+<div class="main"></div>
+<div class="ctn">
+    <div class="title">Nous Contacter :</div>
+    <div class="card-ctn">
+        <div class="card">
+            <form [formGroup]="contactForm">
+                <div class="c-title">Par Internet :</div>
+                
+                <div class="c-label">Prénom :</div>
+                <input class="c-input" type="text" formControlName="prenom">
+                
+                <div class="c-label">Nom :</div>
+                <input class="c-input" type="text" formControlName="nom">
+                
+                <div class="c-label">Email :</div>
+                <input class="c-input" type="email" formControlName="email">
+                
+                <div class="c-label">Message :</div>
+                <textarea class="c-input-area" formControlName="message"></textarea>
+                
+                <button type="submit" class="c-btn" (click)="onSubmit()" [disabled]="contactForm.invalid" >Envoyer</button>
+              </form>
+              
+        </div>            
+        <div class="card">
+            <div class="c-title">Sur Place :</div>
+            <div class="c-text">89 Route de Lyon</div>
+            <div class="c-text">67400 Illkirch-Graffenstaden</div>
+            <div class="c-text">03.88.67.99.89</div>
+            <div class="c-spacer"></div>
+            <div class="c-frame">
+                <iframe width="100%" height="355" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=234%20Av.%20de%20Colmar,%2067021%20Strasbourgland+(CCI)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                    <a href="https://www.gps.ie/">gps systems</a>
+                </iframe>
+            </div>
+        </div>
+        <div class="card">
+            <div class="c-title">Sur Nos Réseaux :</div>
+            <div class="c-reseaux">
+                <div class="fb  pointer space-btw">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#FFFFFF" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve">
+                        <path d="M450 0H62C28 0 0 28 0 62v388c0 34 28 62 62 62h199c8 0 15-7 15-15V314c0-9-7-16-15-16h-54v-43h54c8 0 15-6 15-15v-61c0-33 27-60 60-60h52v43h-52c-9 0-17 8-17 17v61c0 9 7 15 15 15h54v43h-54c-8 0-15 7-15 16v183c0 8 7 15 15 15h116c34 0 62-28 62-62V62c0-34-28-62-62-62zm32 450c0 17-15 32-32 32H349V329h55c8 0 15-7 15-15v-74c0-8-7-15-15-15h-55v-33h55c8 0 15-6 15-15v-73c0-8-7-15-15-15h-68c-50 0-90 40-90 90v46h-55c-8 0-15 7-15 15v74c0 8 7 15 15 15h55v153H62c-17 0-32-15-32-32V62c0-17 15-32 32-32h388c17 0 32 15 32 32v388z"/>
+                    </svg>
+                </div>
+                <div class="c-title">Facebook</div>
+            </div>
+            <div class="c-reseaux">
+                <div class="x  pointer space-btw">
+                    <svg viewBox="0 0 1226.4 1226.4" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M727 519 1174 0h-106L680 451 371 0H13l469 682-469 544h106l410-476 327 476h357L727 519zM582 688l-47-68L157 80h163l305 436 47 68 396 566H906L582 688z"/>
+                    </svg>
+                </div>
+                <div class="c-title">Twitter</div>
+            </div>
+            <div class="c-reseaux">
+                <div class="insta  pointer space-btw">
+                    <svg viewBox="0 0 512 512" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M373 0H139C62 0 0 62 0 139v234c0 77 62 139 139 139h234c77 0 139-62 139-139V139C512 62 450 0 373 0zm109 373c0 60-49 109-109 109H139c-60 0-109-49-109-109V139C30 79 79 30 139 30h234c60 0 109 49 109 109zm0 0"/>
+                        <path d="M256 116a140 140 0 1 0 0 280 140 140 0 0 0 0-280zm0 250a110 110 0 1 1 0-220 110 110 0 0 1 0 220zM399 66a41 41 0 1 0 0 83 41 41 0 0 0 0-83zm0 53a11 11 0 1 1 0-23 11 11 0 0 1 0 23zm0 0"/>
+                    </svg>
+                </div>
+                <div class="c-title">Instagram</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="main-bg"></div>
